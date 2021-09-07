@@ -1,0 +1,116 @@
+﻿Backlog
+Group 24
+
+
+
+Must-have features:
+* There must be 2 roles: Lecturer, Student.
+* One lecture must be able to be created at a time.
+* As a Student:
+   * I must be able to send questions.
+   * I must be able to upvote questions.
+   * I must be able to see the questions.
+   * I must be able to delete my own questions.
+   * I must be able to sort questions chronologically and by upvotes.
+   * I must be able to sort the questions based on popularity, so that the most important questions are visible at the top.
+   * I must be able to manually refresh the question feed.
+   * I must be able to leave the room.
+* As a Lecturer:
+   * I must be able to see the names of the students that post questions.
+   * I must be able to create a lecture.
+   * I must be able to manually close a lecture.
+   * I must be able to see the questions.
+   * I must be able to mark questions as answered.
+   * I must be able to discard questions.
+   * I must be able to sort questions chronologically and by upvotes.
+   * I must be able to sort the questions based on popularity, so that the most important questions are visible at the top.
+   * I must be able to manually refresh the question feed.
+   * I must be able to see and share the codes created for the lecture rooms.
+   * I must be able to leave the room.
+   * I must be able to see the questions in “presenter/simplified mode”, without unnecessary options/spam, already answered questions are removed.
+
+
+Should-have features:
+* There should be 2 additional roles: Moderator, Admin.
+* There could be more than 1 lecture simultaneously.
+* As an Admin: 
+   * I should be able to access the event log, which is a file in the same location as the program.
+      * The event log contains when users joined, their IP addresses and names, and when a lecturer creates a room.
+   * In case the software crashes, I don’t lose any data.
+* As a Moderator: 
+   * I should be able to see the questions.
+   * I should be able to manually refresh the question feed.
+   * I should be able to sort questions chronologically and by upvotes.
+   * I should be able to see the names of the students that posted questions.
+   * I should be able to delete questions.
+   * I should be able to rephrase questions.
+   * I should be able to kick IPs. 
+   * I should be able to sort the questions based on popularity, so that the most important questions are visible at the top.
+   * I should be able to export the questions at the end of each lecture to a text file from where they can later be retrieved on.
+   * I should be able to leave the room.
+
+
+* As a Student:
+   * I should be able to indicate whether the lecture is going too fast or too slow.
+   * I should not be able to see who wrote each question.
+   * I should be able to sort the questions based on popularity, so that the most important questions are visible at the top.
+   * I should be able to see the answers of questions.
+   * I should be able to see the names of the moderator who answered the question.
+* As a Lecturer:
+   * I should be able to schedule a room and invite Students and Moderators using a (separate) room ID.
+
+
+
+
+
+
+Could-have features:
+* The questions feed could update automatically in real-time.
+* As a Student:
+   * I could have a way to see the unanswered and answered questions separately.
+   * I could be able to only ask “X” many questions per minute.
+* As a Moderator:
+   * I could answer questions without leaving the home screen.
+   * I could see if another moderator is typing an answer at the same time, to avoid duplicate work.
+   * I could be able, when exporting the questions, to include additional details (name of the author, number of upvotes, answers) at the end of each lecture.
+   * I could create polls.
+   * I could create quizzes.
+   * I could close polls.
+   * I could close quizzes.
+   * I could reopen polls.
+   * I could reopen quizzes.
+   * I could set how many options the quiz/poll has (minimum 2, maximum 10).
+   * I could end the quiz/poll, and choose whether to share the result of it afterwards or not.
+   * I could access the questions after a lecture has ended via room ID. 
+* As a Lecturer:
+   * I could create polls.
+   * I could create quizzes.
+   * I could reopen polls/ quizzes.
+   * I could set how many options the quiz/poll has (minimum 2, maximum 10).
+   * I could end the quiz/poll, and choose whether to share the result of it afterwards or not.
+   * I could be able, when exporting the questions, to include additional details (name of the author, number of upvotes, answers) at the end of each lecture.
+* As an Admin:
+   * If the question feed is live, I could be able to set a question rate limit (the number of questions a student can ask per chosen unit of time), by changing a variable in the program.
+
+
+
+
+Won’t-have features:
+
+
+* The software won’t have accessibility options for the visually impared individuals.
+* As a Lecturer:
+   * I won’t be able to create open questions.
+* As a Moderator:
+   * I won’t be able to pin questions.
+   * I won’t be able to merge questions.
+   * I won’t be able to create open questions.
+   * I won’t be able to highlight questions.
+* As a Student:
+   * I won’t be able to mark spam questions.
+   * I won’t be able to assign tags to my questions.
+   * I won’t be able to edit my own questions.
+   * I won’t be able to see the names of the students that post questions.
+   * I won’t be able to see my own questions in a separate view.
+* As a User (Student, Moderator, Lecturer, Admin):
+   * I won’t be able to authenticate myself using my university/work email (or any other way).

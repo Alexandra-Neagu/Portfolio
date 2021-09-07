@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="493.0" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.tudelft.oopp.demo.controllers.ListItemLecturerController">    <children>
+    <HBox layoutY="4.0" prefHeight="47.0" prefWidth="487.0">
+        <children>
+            <Label fx:id="numOfUpvotes" prefHeight="17.0" prefWidth="5.0" text="0">
+                <HBox.margin>
+                    <Insets left="6.0" right="3.0" top="15.0" />
+                </HBox.margin>
+            </Label>
+            <ImageView id="upvoteBtn" opacity="0.20" fitHeight="24.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                <HBox.margin>
+                    <Insets top="11.0" />
+                </HBox.margin>
+                <image>
+                    <Image url="icons/upvote-icon.png" />
+                </image>
+            </ImageView>
+            <Label fx:id="questionText" prefHeight="47.0" prefWidth="373.0" styleClass="smallText" stylesheets="@css/text.css" text="Question text">
+                <HBox.margin>
+                    <Insets left="13.0" />
+                </HBox.margin></Label>
+            <ImageView fx:id="answeredBtn" disable="false" onMouseClicked="#handleMarkAsAnswered" visible="true" fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="icons/checkmark.png" />
+                </image>
+                <HBox.margin>
+                    <Insets left="3.0" />
+                </HBox.margin>
+            </ImageView>
+            <VBox>
+                <children>
+                    <Label fx:id="timeText" text="00:00">
+                        <VBox.margin>
+                            <Insets top="10.0" />
+                        </VBox.margin>
+                    </Label>
+                    <ImageView fx:id="deleteBtn" onMouseClicked="#handleDeleteBtn" visible="true" fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="icons/delete-icon.jpg" />
+                        </image>
+                        <HBox.margin>
+                            <Insets left="3.0" />
+                        </HBox.margin>
+                    </ImageView>
+                    <Label fx:id="answeredLabel" text="(not answered)">
+                        <font>
+                            <Font size="8.0" />
+                        </font>
+                        <VBox.margin>
+                            <Insets right="4.0" />
+                        </VBox.margin>
+                    </Label>
+                </children>
+            </VBox>
+        </children>
+    </HBox>
+    <Label fx:id="authorID" layoutX="24.0" layoutY="-7.0" prefHeight="30.0" prefWidth="72.0" text="Author" />
+</children>
+</AnchorPane>

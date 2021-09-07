@@ -1,0 +1,31 @@
+.button {
+    -fx-background-color:#0000E5;
+    -fx-text-fill: white;
+}
+.button.cancel{
+    -fx-background-color: white;
+    -fx-text-fill: #0000E5;
+    -fx-end-margin: blue;
+}
+.button.leave{
+    -fx-background-color: #980101;
+    -fx-text-fill: white;
+    -fx-end-margin: white;
+}
+
+.button.upvote{
+    -fx-background-color: #2694b7;
+    -fx-text-fill: white;
+    -fx-end-margin: white;
+}
+
+.button.reset {
+    -fx-background-color: #f70a0a;
+    -fx-text-fill: white;
+    -fx-end-margin: white;
+}
+
+.button:disabled {
+    -fx-background-color: #858585;
+    -fx-text-fill: white;
+}

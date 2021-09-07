@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.tudelft.oopp.demo.controllers.RoomCodeSceneController">
+   <children>
+      <Label fx:id="courseName" layoutX="50.0" layoutY="43.0" styleClass="basicText" stylesheets="@css/text.css" text="Course name" />
+      <Label fx:id="lectureName" layoutX="50.0" layoutY="65.0" styleClass="basicText" stylesheets="@css/text.css" text="Lecture name" />
+      <Label fx:id="studentRoomCodeLabel" layoutX="69.0" layoutY="138.0" onMouseClicked="#clickedStudentLabel" prefHeight="22.0" prefWidth="287.0" stylesheets="@css/text.css" text="Room code for Students">
+         <styleClass>
+            <String fx:value="basicText" />
+            <String fx:value="roomCodeText" />
+         </styleClass></Label>
+      <Label fx:id="modRoomCodeLabel" layoutX="69.0" layoutY="189.0" onMouseClicked="#clickedModLabel" prefHeight="22.0" prefWidth="287.0" stylesheets="@css/text.css" text="Room code for Moderators">
+         <styleClass>
+            <String fx:value="basicText" />
+            <String fx:value="roomCodeText" />
+         </styleClass></Label>
+      <Label fx:id="lecturerRoomCodeLabel" layoutX="69.0" layoutY="242.0" onMouseClicked="#clickedLecturerLabel" prefHeight="22.0" prefWidth="287.0" stylesheets="@css/text.css" text="Room code for Lecturers">
+         <styleClass>
+            <String fx:value="basicText" />
+            <String fx:value="roomCodeText" />
+         </styleClass></Label>
+      <Label fx:id="startsAtLabel" layoutX="410.0" layoutY="160.0" styleClass="smallText" stylesheets="@css/text.css" text="The lecture will start at:" />
+      <Button fx:id="backToMenuBtn" contentDisplay="CENTER" layoutX="434.0" layoutY="253.0" mnemonicParsing="false" onAction="#handleBtnBack" prefHeight="34.0" prefWidth="74.0" styleClass="cancel" stylesheets="@css/button.css" text="Back to Menu">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Label fx:id="copyLabelStudent" layoutX="69.0" layoutY="143.0" prefHeight="34.0" prefWidth="68.0" styleClass="clickToCopy" stylesheets="@css/text.css" text="click to copy">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="copyLabelMod" layoutX="69.0" layoutY="194.0" prefHeight="34.0" prefWidth="68.0" styleClass="clickToCopy" stylesheets="@css/text.css" text="click to copy">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="copyLabelLect" layoutX="69.0" layoutY="247.0" prefHeight="34.0" prefWidth="68.0" styleClass="clickToCopy" stylesheets="@css/text.css" text="click to copy">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
