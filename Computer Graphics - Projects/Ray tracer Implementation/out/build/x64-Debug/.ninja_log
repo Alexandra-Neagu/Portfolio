@@ -1,0 +1,23 @@
+# ninja log v5
+28	2701	6559215208660541	framework/CMakeFiles/CGFramework.dir/src/imguizmo.cpp.obj	e4be8a16b19c3311
+18	2909	6559215210590524	framework/CMakeFiles/CGFramework.dir/src/trackball.cpp.obj	e282aef1c026f371
+18	4003	6564652569059436	CMakeFiles/FinalProject.dir/src/bounding_volume_hierarchy.cpp.obj	484bc1352d10a299
+9	4364	6564652572739404	CMakeFiles/FinalProject.dir/src/draw.cpp.obj	1bc62ba420fa9991
+4555	5050	6559215232190527	framework/CMakeFiles/CGFramework.dir/src/ImGuizmo/ImGuizmo.cpp.obj	771440e1db52f17a
+14	4035	6564652569419434	CMakeFiles/FinalProject.dir/src/screen.cpp.obj	f03af830d72a1266
+25	4709	6559215228740525	framework/CMakeFiles/CGFramework.dir/src/image.cpp.obj	152b884eb4d5f958
+2910	5167	6559215233330522	framework/CMakeFiles/CGFramework.dir/src/window.cpp.obj	9d6ec6e39c4d5aa7
+12	4054	6564652569619415	CMakeFiles/FinalProject.dir/src/scene.cpp.obj	cdfb970c07fffebc
+3	4000	6564652568869423	CMakeFiles/FinalProject.dir/src/ray_tracing.cpp.obj	a542ae3ae74f31a
+6	4699	6564652576086469	CMakeFiles/FinalProject.dir/src/main.cpp.obj	f63a51d4207a1100
+22	5252	6559215234210525	framework/CMakeFiles/CGFramework.dir/src/mesh.cpp.obj	2998ee04fbd0bacd
+2705	6617	6559215247856903	framework/CMakeFiles/CGFramework.dir/src/shader.cpp.obj	9964c7f0eb5587e5
+6618	6688	6559215248566904	framework/CGFramework.lib	eb8db98fc9dcfcc9
+4699	5743	6564652579336449	FinalProject.exe	dedbebec00f67723
+18	2865	6565542905141348	CMakeFiles/FinalProject.dir/src/bounding_volume_hierarchy.cpp.obj	484bc1352d10a299
+15	2969	6565542906291344	CMakeFiles/FinalProject.dir/src/scene.cpp.obj	cdfb970c07fffebc
+9	2993	6565542906511327	CMakeFiles/FinalProject.dir/src/screen.cpp.obj	f03af830d72a1266
+6	3016	6565542906781340	CMakeFiles/FinalProject.dir/src/ray_tracing.cpp.obj	a542ae3ae74f31a
+11	3367	6565542910291339	CMakeFiles/FinalProject.dir/src/draw.cpp.obj	1bc62ba420fa9991
+3	3562	6565542912247748	CMakeFiles/FinalProject.dir/src/main.cpp.obj	f63a51d4207a1100
+3563	4540	6565542916759295	FinalProject.exe	dedbebec00f67723

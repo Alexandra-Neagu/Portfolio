@@ -1,0 +1,6 @@
+C:/Users/neagu/Desktop/final_project/out/build/x64-Release/CMakeFiles/FinalProject.dir
+C:/Users/neagu/Desktop/final_project/out/build/x64-Release/CMakeFiles/edit_cache.dir
+C:/Users/neagu/Desktop/final_project/out/build/x64-Release/CMakeFiles/rebuild_cache.dir
+C:/Users/neagu/Desktop/final_project/out/build/x64-Release/framework/CMakeFiles/edit_cache.dir
+C:/Users/neagu/Desktop/final_project/out/build/x64-Release/framework/CMakeFiles/CGFramework.dir
+C:/Users/neagu/Desktop/final_project/out/build/x64-Release/framework/CMakeFiles/rebuild_cache.dir
