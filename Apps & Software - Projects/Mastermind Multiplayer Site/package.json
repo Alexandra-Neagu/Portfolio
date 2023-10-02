@@ -1,0 +1,24 @@
+{
+  "name": "mastermindonline",
+  "version": "1.0.0",
+  "description": "The mastermind game that can be played multiplayer.",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-generator": "^4.16.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "/mnt/d/delft/Web/Assignment"
+  },
+  "keywords": [
+    "mastermind",
+    "strategy"
+  ],
+  "author": "Cosmin Anton and Alexandra Neagu",
+  "license": "ISC"
+}

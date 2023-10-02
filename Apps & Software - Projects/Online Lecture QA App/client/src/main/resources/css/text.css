@@ -1,0 +1,14 @@
+.basicText{
+   -fx-font-size: 15px;
+}
+.smallText{
+   -fx-font-size: 12px;
+}
+.roomCodeText:hover{
+   -fx-background-color: black;
+   -fx-text-fill: white;
+}
+
+.clickToCopy{
+   -fx-font-size: 10px;
+}

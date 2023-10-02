@@ -1,0 +1,15 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="MainApp" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="nl.tudelft.oopp.demo.MainApp" />
+    <module name="repository-template.client.main" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="nl.tudelft.oopp.demo.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

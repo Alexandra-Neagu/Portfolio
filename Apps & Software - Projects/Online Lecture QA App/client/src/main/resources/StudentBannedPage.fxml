@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.tudelft.oopp.demo.controllers.StudentBannedPageController">
+    <children>
+        <Label fx:id="label" alignment="CENTER" focusTraversable="false" layoutX="64.0" layoutY="69.0" prefHeight="62.0" prefWidth="481.0" text="You are banned from this lecture">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+        <Button fx:id="backToMenuBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="233.0" layoutY="191.0" mnemonicParsing="false" onAction="#handleBackToMenu" prefHeight="38.0" prefWidth="143.0" stylesheets="@css/button.css" text="Go Back to Menu" textAlignment="CENTER">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="quitAppBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="218.0" layoutY="271.0" mnemonicParsing="false" onAction="#handleQuitAppBtn" prefHeight="38.0" prefWidth="172.0" styleClass="leave" stylesheets="@css/button.css" text="Quit the Application" textAlignment="CENTER">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Label alignment="CENTER" contentDisplay="CENTER" disable="true" layoutX="15.0" layoutY="182.0" prefHeight="18.0" prefWidth="575.0" textAlignment="CENTER" />
+    </children>
+</AnchorPane>

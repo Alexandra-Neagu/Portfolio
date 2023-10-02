@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane fx:id="questionItem" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="110.0" prefWidth="493.0" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.tudelft.oopp.demo.controllers.ListItemLecturerComplexController">    <children>
+    <HBox layoutY="4.0" prefHeight="100.0" prefWidth="487.0">
+        <children>
+            <Label fx:id="numOfUpvotes" prefHeight="17.0" prefWidth="5.0" text="0">
+                <HBox.margin>
+                    <Insets left="6.0" right="3.0" top="12.0" />
+                </HBox.margin>
+            </Label>
+            <ImageView fx:id="upvoteBtn" disable="true" fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                <HBox.margin>
+                    <Insets top="9.0" />
+                </HBox.margin>
+                <image>
+                    <Image url="icons/upvote-icon.png" />
+                </image>
+            </ImageView>
+            <Label fx:id="questionText" prefHeight="47.0" prefWidth="373.0" styleClass="smallText" stylesheets="@css/text.css" text="Question text">
+                <HBox.margin>
+                    <Insets left="13.0" />
+                </HBox.margin></Label>
+            <VBox />
+        </children>
+        <ImageView fx:id="answerBtn" disable="false" onMouseClicked="#handleAnswerBtn" fitHeight="32.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+            <HBox.margin>
+                <Insets top="8.0" left="12.0" />
+            </HBox.margin>
+            <image>
+                <Image url="icons/checkmark.png" />
+            </image>
+        </ImageView>
+    </HBox>
+    <Label fx:id="authorID" layoutX="6.0" layoutY="-7.0" prefHeight="30.0" prefWidth="72.0" text="Author" />
+
+    <Button fx:id="reviewBtn" layoutX="386.0" layoutY="47.0"  mnemonicParsing="false" onAction="#handleReviewBtn" prefHeight="25.0" prefWidth="66.0" text="Review &gt;" />
+    <TextField fx:id="replyTextField" onMouseClicked="#stopTimeline" layoutX="52.0" layoutY="45.0" prefHeight="25.0" prefWidth="170.0" promptText="Type your reply here..." />
+    <Button fx:id="responseBtn" layoutX="233.0" layoutY="45.0" onAction="#handleResponseBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" text="=&gt;" />
+    <Label fx:id="timeText" layoutX="406.0" layoutY="20.0" text="00:00" />
+</children>
+</AnchorPane>
