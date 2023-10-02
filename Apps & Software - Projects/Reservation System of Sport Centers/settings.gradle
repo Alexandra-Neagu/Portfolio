@@ -1,0 +1,6 @@
+rootProject.name = 'project'
+
+include 'reservations'
+include 'users'
+include 'authentication'
+include 'discovery-server'

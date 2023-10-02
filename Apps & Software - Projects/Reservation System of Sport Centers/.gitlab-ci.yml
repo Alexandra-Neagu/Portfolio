@@ -1,0 +1,99 @@
+image: gradle:6.7-jdk15
+
+stages:
+  - assemble
+  - static-analysis
+  - test
+  - build
+
+reservations-assemble:
+  stage: assemble
+  script:
+    gradle reservations:assemble
+
+users-assemble:
+  stage: assemble
+  script:
+    gradle users:assemble
+
+authentication-assemble:
+  stage: assemble
+  script:
+    gradle authentication:assemble
+
+reservations-checkStyle:
+  stage: static-analysis
+  script:
+    gradle reservations:checkstyleMain reservations:checkStyleTest
+
+users-checkStyle:
+  stage: static-analysis
+  script:
+    gradle users:checkstyleMain users:checkStyleTest
+
+authentication-checkStyle:
+  stage: static-analysis
+  script:
+    gradle authentication:checkstyleMain authentication:checkStyleTest
+
+reservations-PMD:
+  stage: static-analysis
+  script:
+    gradle reservations:pmdMain reservations:pmdTest
+
+users-PMD:
+  stage: static-analysis
+  script:
+    gradle users:pmdMain users:pmdTest
+
+authentication-PMD:
+  stage: static-analysis
+  script:
+    gradle authentication:pmdMain authentication:pmdTest
+
+      gradle pmdMain pmdTest
+
+reservations-test:
+  stage: test
+  script:
+    gradle reservations:test
+
+users-test:
+  stage: test
+  script:
+    gradle users:test
+
+authentication-test:
+  stage: test
+  script:
+    gradle authentication:test
+
+reservations-pitest:
+  stage: test
+  script:
+    gradle reservations:pitest
+
+users-pitest:
+  stage: test
+  script:
+    gradle users:pitest
+
+authentication-pitest:
+ stage: test
+ script:
+   gradle authentication:pitest
+
+reservations-build:
+  stage: build
+  script:
+    gradle reservations:build
+
+users-build:
+  stage: build
+  script:
+    gradle users:build
+
+authentication-build:
+  stage: build
+  script:
+    gradle authentication:build
