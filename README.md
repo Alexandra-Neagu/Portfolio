@@ -5,6 +5,7 @@ A portfolio of the projects I have worked on. It includes both personal and acad
 ## Blog posts
 
 1. [NeuRBF: Reproduction and Ablation Studies](https://alexandra-neagu.medium.com/neurbf-reproduction-and-ablation-studies-b35096897e23)
+2. [Dual-Task Learning for Plant Disease Classification and Severity Assessment with a Common Backbone](https://alexandra-neagu.medium.com/dual-task-learning-for-plant-disease-classification-and-severity-assessment-with-a-common-backbone-5cf9776ef26f)
 
 ## Projects & repositories (public)
 
