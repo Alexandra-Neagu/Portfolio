@@ -14,3 +14,7 @@ A portfolio of the projects I have worked on. It includes both personal and acad
 3. [Grey-Box Optimization for the MaxCut problem using Evolutionary Algorithms](https://github.com/Alexandra-Neagu/MaxCut_GA)
 4. [Reproduction & Ablation Studies of the paper NeuRBF: A Neural Fields Representation with Adaptive Radial Basis Functions](https://github.com/Alexandra-Neagu/NeuRBF_ablation_study)
 5. [Bilateral Automated Negotiating Agent for the *Automated Negotiation League 2023*](https://github.com/Alexandra-Neagu/automated_negotiation_agent)
+
+## Interactive UIs
+
+1. [Porto di Mare App](https://app.uizard.io/p/c86796a5/preview)
