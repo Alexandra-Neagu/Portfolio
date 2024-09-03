@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1580392864 source:c:\users\alexandra\desktop\zarva_eu\main.cpp
+	<iostream>
+	<fstream>
+	<algorithm>
+

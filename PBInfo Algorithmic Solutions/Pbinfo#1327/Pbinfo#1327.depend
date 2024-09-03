@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1541007300 source:e:\programare\c++ - codeblocks\cls a 11-a\pbinfo#1327\main.cpp
+	<iostream>
+	<fstream>
+	<algorithm>
+

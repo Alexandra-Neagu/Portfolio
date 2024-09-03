@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1519046463 source:e:\programare\c++\cls a 10-a\pbinfo#1428\main.cpp
+	<iostream>
+	<fstream>
+	<climits>
+

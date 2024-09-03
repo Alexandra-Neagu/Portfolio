@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1576598265 source:c:\users\alexandra\desktop\r25\main.cpp
+	<iostream>
+	<cstring>
+	<cmath>
+	<fstream>
+
