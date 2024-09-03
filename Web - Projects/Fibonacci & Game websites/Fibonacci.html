@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="stil_siteTIC.css">
+	<title> Șirul lui Fibonacci </title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="quiz-1.js"></script>
+</head>
+<body background="blueElec.png">
+	<h1 align="center"> Șirul lui Fibonacci </h1>
+	<br> <br> <br> <br> <br> <hr style="color:white;"> <hr style="color:white;">
+	<div style="text-align:center;">
+
+<!-- Meniul de sus care contine link-uri catre elemente ale aceeasi pagini -->
+
+		 <p id="linkSamePage" > <a  href="#generalitati" class="text-left"> Sari la Generalități </a> </p>
+		 <p id="linkSamePage"> <a  href="#algoritm"> Sari la Algoritm </a> </p>
+		 <p id="linkSamePage"> <a  href="#quiz"> Sari la Quiz </a> </p>
+		 <p id="linkSamePage"> <a href="file:///C:/Users/Oana/Desktop/Aca/Programare/Programe/HTML/SiteuriTIC/Fibonacci/joc.html" target="_blank"> Sari la joc </a> </p>
+	</div>
+	<hr style="color:white;"> <hr style="color:white;"> <br> <br>
+
+<!-- Generalitatile -->
+
+	<p id="generalitati"> Generalități </p>
+	<br> <br> 
+	<p class="text" style="font-size:150%">
+		<img src="giphy-downsized.gif" alt="Spirala lui Fibonacci" title="Spirala lui Fibonacci" style="float:right; width:215px; height:150px;">
+		Printre infinitatea de șiruri existente în lumea matematicii, italianul Leonardo of Pisa, cunoscut și sub numele de <span style="color:#ffccff;"><ins>Fibonacci</ins></span>, a 
+		descoperit un șir de numere extraordinar de interesant: „0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597…”. 
+		Formula pe baza căruia se obține acest șir este una foarte simplă: primele două elemente ale șirului sunt 0 și 1, iar al treilea 
+		element se obține adunâdu-le pe primele două: 0+1 = 1. Al patrulea se obține adunâdu-le pe al treilea cu al doilea (2+1=3). Al 
+		cincilea se obține adunâdu-le pe al patrulea cu al treilea (3+2=5), și tot așa, până la infinit.
+	</p>
+	<br> <br> <br>
+
+<!-- Algoritmul -->
+
+	<p id="algoritm"> Algoritm </p>
+	<br> <br>
+	<p> 
+		<a href="https://en.wikipedia.org/wiki/Fibonacci_number" target="_blank">
+			<img src="Sir_fibo.jpg" alt="Regula șirului lui Fibonacci" title="Regula șirului lui Fibonacci" style="float:right; width:470px; height:600px; margin-right:100px;">
+		</a>
+		<XMP style="font-size:150%; color: yellow;">
+		#include <iostream>
+
+		using namespace std;
+
+		int main()
+		{
+   			long long n,a=0,b=1,f;
+   			cin>>n;
+    			if(n==1) cout<<a;
+    			else if(n>=2)    cout<<a<<" "<<b<<" ";
+    			for(int i=2;i<n;++i)
+    			{
+        			f=a+b;
+        			cout<<f<<" ";
+        			a=b;
+        			b=f;
+    			}
+    			return 0;
+		}
+		</XMP>
+	</p>
+	<br> <br>
+	<p class="text" style="font-size:150%;"> 
+		Algoritmul de mai sus afișează primii n termeni ai șirului lui Fibonacci, considerându-i pe primii doi ca fiind 0 și 1. Algoritmul poate fi prelucrat ușor, în funcție de cerință.
+	</p>
+	<br> <br> <br>
+
+<!-- Quiz-ul. Tot ce trebuie sa stii legat de cum sa-l modifici si ce fisiere ii corespund se afla foarte bine explicat si detalait aici: http://www.hungrypiranha.org/make-a-website/html-quiz -->
+
+	<p id="quiz"> Quiz </p>
+	<br> <br>
+	<p class="question" style="margin-left:20px; font-size:150%;"><span style="color:#ff9966;">1.</span> Șirul lui Fibonacci este:</p>        
+
+	<ul class="answers" style="margin-left:20px; font-size:120%;">            
+	<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Limitat</label><br/>          
+	<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Infinit</label><br/>            
+	<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Un șir ce conține elemente negative</label><br/>            
+	<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">O grupare de patru cuvinte</label><br/>       
+	</ul>        
+
+
+	<p class="question" style="margin-left:20px; font-size:150%;"><span style="color:#ff9966;">2.</span> Cum îl chema de fapt pe Fibonacci?</p>        
+
+	<ul class="answers" style="margin-left:20px; font-size:120%;">            
+	<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">Ezio Auditore da Firenze</label><br/>           
+	<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">Romeo Montecchio</label><br/>            
+	<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">Leonardo of Pisa</label><br/>           
+	<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">Michelangelo Buonarroti</label><br/>       
+	</ul>        
+
+	<p class="question" style="margin-left:20px; font-size:150%;"><span style="color:#ff9966;">3.</span> Fibonacci era originar din:</p>        
+
+	<ul class="answers" style="margin-left:20px; font-size:120%;">            
+	<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">Arabia</label><br/>            
+	<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">Franța</label><br/>            
+	<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">Satu Mare</label><br/>           
+	<input type="radio" name="q3" value="d" id="q3d"><label for="q3d">Italia</label><br/>       
+	</ul>        
+
+	<p class="question" style="margin-left:20px; font-size:150%;"><span style="color:#ff9966;">4.</span> Care sunt primele două elemente ale șirului?</p>        
+
+	<ul class="answers" style="margin-left:20px; font-size:120%;">           
+	<input type="radio" name="q4" value="a" id="q4a"><label for="q4a">42 și 111</label><br/>            
+	<input type="radio" name="q4" value="b" id="q4b"><label for="q4b">1 și 2</label><br/>            
+	<input type="radio" name="q4" value="c" id="q4c"><label for="q4c">0 și 1</label><br/>            
+	<input type="radio" name="q4" value="d" id="q4d"><label for="q4d">6 și 9</label><br/>        
+	</ul>        
+
+	<p class="question" style="margin-left:20px; font-size:150%;"><span style="color:#ff9966;">5.</span> Cum se obține al treilea element?</p>        
+
+	<ul class="answers" style="margin-left:20px; font-size:120%;">            
+	<input type="radio" name="q5" value="a" id="q5a"><label for="q5a">Le aduni pe primele două</label><br/>            
+	<input type="radio" name="q5" value="b" id="q5b"><label for="q5b">Le înmulțești pe primele două</label><br/>            
+	<input type="radio" name="q5" value="c" id="q5c"><label for="q5c">Faci câtul primelor două</label><br/>           
+	<input type="radio" name="q5" value="d" id="q5d"><label for="q5d">Te gândești la un număr la întâmplare și presupui că este al treiler număr al șirului lui Fibonacci</label><br/>        
+	</ul>        
+
+	<p class="question" style="margin-left:20px; font-size:150%;"><span style="color:#ff9966;">6.</span> Ce face algoritmul de mai sus?</p>        
+
+	<ul class="answers" style="margin-left:20px; font-size:120%;">            
+	<input type="radio" name="q6" value="a" id="q6a"><label for="q6a">Verifică dacă un număr dat aparține șirului lui Fibonacci</label><br/>            
+	<input type="radio" name="q6" value="b" id="q6b"><label for="q6b">Afișează primele n numere ale șirului lui Fibonacci</label><br/>            
+	<input type="radio" name="q6" value="c" id="q6c"><label for="q6c">Face bine, tu?</label><br/>            
+	<input type="radio" name="q6" value="d" id="q6d"><label for="q6d">Cu siguranță nu de mâncare</label><br/>        
+	</ul>       
+
+	<p class="question" style="margin-left:20px; font-size:150%;"><span style="color:#ff9966;">7.</span> Ce reprezintă n în algoritmul de mai sus?</p>        
+
+	<ul class="answers" style="margin-left:20px; font-size:120%;">            
+	<input type="radio" name="q7" value="a" id="q7a"><label for="q7a">Întrebare capcană, n nici măcar nu apare în algoritm</label><br/>            
+	<input type="radio" name="q7" value="b" id="q7b"><label for="q7b">Un număr pe care îl vom verifica dacă aparține sau nu șirului lui Fibonacci</label><br/>            
+	<input type="radio" name="q7" value="c" id="q7c"><label for="q7c">O variabilă float</label><br/>            
+	<input type="radio" name="q7" value="d" id="q7d"><label for="q7d">Numărul de numere ce se vor afișa din șirul lui Fibonacci</label><br/>        
+	</ul>        
+
+	<p class="question" style="margin-left:20px; font-size:150%;"><span style="color:#ff9966;">8.</span> Care este al 18-lea număr al șirului lui Fibonacci?</p>        
+
+	<ul class="answers" style="margin-left:20px; font-size:120%;">            
+	<input type="radio" name="q8" value="a" id="q8a"><label for="q8a">1597</label><br/>            
+	<input type="radio" name="q8" value="b" id="q8b"><label for="q8b">4200</label><br/>            
+	<input type="radio" name="q8" value="c" id="q8c"><label for="q8c">111</label><br/>            
+	<input type="radio" name="q8" value="d" id="q8d"><label for="q8d">Întrebare capcană, șirul lui Fibonacci nici măcar nu are 18 numere</label><br/>       
+	</ul>        
+
+	<p class="question" style="margin-left:20px; font-size:150%;"><span style="color:#ff9966;">9.</span> Cum ți se pare acest site?</p>        
+
+	<ul class="answers" style="margin-left:20px; font-size:120%;">            
+	<input type="radio" name="q9" value="a" id="q9a"><label for="q9a">Ca fiind doar un sumă de coduri în HTML, CSS și Javascript</label><br/>            
+	<input type="radio" name="q9" value="b" id="q9b"><label for="q9b">Nu mi se pare</label><br/>            
+	<input type="radio" name="q9" value="c" id="q9c"><label for="q9c">Perfecțiunea întruchipată</label><br/>            
+	<input type="radio" name="q9" value="d" id="q9d"><label for="q9d">Nașpa, nu este îndeajuns de educativ</label><br/>        
+	</ul>        
+
+	<p class="question" style="margin-left:20px; font-size:150%;"><span style="color:#ff9966;">10.</span> Ai mai revizita acest site?</p>        
+ 
+	<ul class="answers" style="margin-left:20px; font-size:120%;">           
+	<input type="radio" name="q10" value="a" id="q10a"><label for="q10a">Presupun că da</label><br/>            
+	<input type="radio" name="q10" value="b" id="q10b"><label for="q10b">Dacă l-aș mai revizita?! De acum numai pe el o să stau! Cum prind Wi-fi pe el intru!</label><br/>            
+	<input type="radio" name="q10" value="c" id="q10c"><label for="q10c">Cu siguranță nu, este un gunoi</label><br/>            
+	<input type="radio" name="q10" value="d" id="q10d"><label for="q10d">Probabil că nu</label><br/>        
+	</ul>        
+
+	<br/>
+	<div id="results" style="margin-left:65px;">            
+		Arată-mi răspunsurile!       
+	</div>                
+
+	<div id="category1">            
+		<p>              
+		<strong>Întrebarea 1:</strong> Răspunsul corect este: <strong>Infinit</strong>.</p>        
+	</div>        
+
+	<div id="category2">            
+		<p>              
+		<strong>Întrebarea 2:</strong> Răspunsul corect este: <strong>Leonardo of Pisa</strong>.</p>        
+	</div>        
+
+	<div id="category3">            
+		<p>                
+		<strong>Întrebarea 3:</strong> Răspunsul corect este: <strong>Italia</strong>.</p>        
+	</div>        
+
+	<div id="category4">            
+		<p>               
+		<strong>Întrebarea 4:</strong> Răspunsul corect este: <strong>0 și 1</strong>.</p>        
+	</div>        
+
+	<div id="category5">            
+		<p>                
+		<strong>Întrebarea 5:</strong> Răspunsul corect este: <strong>Le aduni pe primele două</strong>.</p>        
+	</div>        
+
+	<div id="category6">            
+		<p>                
+		<strong>Întrebarea 6:</strong> Răspunsul corect este: <strong>Afișează primele n numere ale șirului lui Fibonacci</strong>.</p>        
+	</div>        
+
+	<div id="category7">            
+		<p>                
+		<strong>Întrebarea 7:</strong> Răspunsul corect este: <strong>Numărul de numere ce se vor afișa din șirul lui Fibonacci</strong>.</p>        
+	</div>        
+
+	<div id="category8">            
+		<p>               
+		<strong>Întrebarea 8:</strong> Răspunsul corect este: <strong>1597</strong>.</p>        
+	</div>        
+
+	<div id="category9">           
+		<p>               
+		<strong>Întrebarea 9:</strong> Răspunsul corect este: <strong>Perfecțiunea întruchipată</strong>.</p>        
+	</div>        
+
+	<div id="category10">            
+		<p>                
+		<strong>Întrebarea 10:</strong> Răspunsul corect este: <strong>Dacă l-aș mai revizita?! De acum numai pe el o să stau! Cum prind Wi-fi pe el intru!</strong>.</p>        
+	</div>        
+
+	<div id="category11">            
+		<p>                
+		Ai răspuns la toate corect!</p>  
+	</div> 
+	<br> <br> <br> <br> <br>
+
+
+<!-- Butoanele de Back si de Joc sunt doar imagini-link. Poti modifica link-ul butonului back.png ca sa te duca la site-ul principal -->
+     
+	<div style="text-align:center;">
+  		<span class="imgContainer">
+			<a href="file:///C:/Users/Oana/Desktop/Aca/Programare/Programe/HTML/SiteuriTIC/Fibonacci/Fibonacci.html" target="_self">
+        			<img src="back.png" height="70" width="180"> 
+			</a>
+   		 </span>
+   		 <span class="imgContainer">
+			<a href="file:///C:/Users/Oana/Desktop/Aca/Programare/Programe/HTML/SiteuriTIC/Fibonacci/joc.html" target="_blank">
+        			<img  src="button1.png" height="70" width="180"> 
+			</a>
+   		 </span>
+	</div>		
+</body>
+</html>

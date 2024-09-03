@@ -1,0 +1,142 @@
+h1{
+	color: white;
+	font-family: Verdana;
+	text-decoration: underline;
+	font-size: 300%;
+}
+
+p{
+	color: white;
+	font-family: Times New Roman;
+}
+
+XMP{
+	color: white;
+	font-family: Times New Roman;
+}
+
+p.text{
+	display: inline-block;
+	margin-left: 15px;	
+}
+
+img.center {
+    	display: block;
+    	margin: 0 auto;
+}
+
+.imgContainer{
+    	float:center;
+}
+
+#generalitati{
+	font-familty: Verdana;
+	font-size: 225%;
+	color: #ff9966;
+	display: inline-block;
+	margin-left: 40px;
+	text-decoration: underline;
+}
+
+#algoritm{
+	font-familty: Verdana;
+	font-size: 225%;
+	color: #ff9966;
+	display: inline-block;
+	margin-left: 40px;
+	text-decoration: underline;
+}
+
+#inPlus{
+	font-familty: Verdana;
+	font-size: 225%;
+	color: #ff9966;
+	display: inline-block;
+	margin-left: 40px;
+	text-decoration: underline;
+}
+
+
+#quiz{
+	font-familty: Verdana;
+	font-size: 225%;
+	color: #ff9966;
+	display: inline-block;
+	margin-left: 40px;
+	text-decoration: underline;
+}
+
+#linkSamePage{
+	font-familty: Verdana;
+	font-size: 150%;
+	color: #f2f2f2;
+	display: inline-block;
+	margin-left: 30px;
+}
+a:link {
+   	color: #b3ffb3; 
+    	background-color: transparent; 
+    	text-decoration: none;
+}
+
+a:visited {
+   	color: pink;
+   	background-color: transparent;
+    	text-decoration: none;
+}
+
+a:hover {
+   	color: red;
+    	background-color: transparent;
+    	text-decoration: underline;
+}
+
+a:active {
+    	color: yellow;
+    	background-color: transparent;
+    	text-decoration: underline;
+}
+
+.answers li { 
+list-style: upper-alpha; 
+} 
+
+label { 
+margin-left: 0.5em; 
+cursor: pointer; 
+color: white;
+} 
+
+#results { 
+background: #dddada; 
+color: 000000; 
+padding: 3px; 
+text-align: center; 
+width: 200px; 
+cursor: pointer; 
+border: 1px solid gray; 
+}
+
+#results:hover { 
+background: #3d91b8; 
+color: #ffffff; 
+padding: 3px; 
+text-align: center; 
+width: 200px; 
+cursor: pointer; 
+border: 1px solid gray; 
+} 
+
+#categorylist { 
+margin-top: 6px; 
+display: none; 
+} 
+
+#category1, #category2, #category3, #category4, #category5, #category6, #category7, #category8, #category9, #category10, #category11 { 
+display: none; 
+}
+
+#closing {
+display: none;
+font-style: italic;
+}

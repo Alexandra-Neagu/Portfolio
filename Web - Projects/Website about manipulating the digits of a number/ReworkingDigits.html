@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="stil_siteTIC.css">
+	<title> Prelucrarea cifrelor unui număr </title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="quiz-1.js"></script>
+</head>
+<body background="blueElec.png">
+	<h1 align="center"> Prelucrarea cifrelor unui număr </h1>
+	<br> <br> <br> <br> <br> <hr style="color:white;"> <hr style="color:white;">
+	<div style="text-align:center;">
+
+<!-- Meniul de sus care contine link-uri catre elemente ale aceeasi pagini -->
+
+		 <p id="linkSamePage" > <a  href="#generalitati" class="text-left"> Sari la Generalități </a> </p>
+		 <p id="linkSamePage"> <a  href="#algoritm"> Sari la Algoritm </a> </p>
+		 <p id="linkSamePage"> <a  href="#quiz"> Sari la Quiz </a> </p>
+		 <p id="linkSamePage"> <a href="file:///C:/Users/Oana/Desktop/Aca/Programare/Programe/HTML/SiteuriTIC/Fibonacci/joc.html" target="_blank"> Sari la joc </a> </p>
+	</div>
+	<hr style="color:white;"> <hr style="color:white;"> <br> <br>
+
+<!-- Generalitatile -->
+
+	<p id="generalitati"> Generalități </p>
+	<br> <br> 
+	<p class="text" style="font-size:150%">
+		
+		Pentru prelucrarea cifrelor unui număr n se extrag pe rând cifrele acestuia. Întotdeauna cifra extrasă va fi cifra cea mai nesemnificativă (ultima cifră),
+	 	cu operaţia n%10. După extragerea ultimei cifre, aceasta se prelucrează, apoi, această cifră, se elimină din numărul iniţial. Algoritmul continuă până când 
+		numărul mai are cifre (n!=0). 
+		<span> 
+		<pre style="color:white; font-size:150%;">
+		Şablonul de rezolvare al problemelor care prelucrează cifrele unui număr natural are următoarea formă:
+		citeşte numărul de prelucrat
+
+		iniţializarea variabilelor de manevră
+
+		┌cât timp numărul dat mai are cifre neprelucrate execută
+
+		│  - extrage ultima cifră din număr
+
+		│  - prelucrază această cifră conform enunţului din problemă
+
+		│  - elimină din numărul de prelucrat ultima lui cifră
+
+		└■
+
+		afişează rezultatul 
+		</pre> 
+		</span>
+	</p>
+	<br> <br> <br>
+
+<!-- Algoritmul -->
+
+	<p id="algoritm"> Algoritm </p>
+	<br> <br>
+	<p> 
+		</a>
+		<XMP style="font-size:150%; color: yellow; margin-left: 3cm;">
+			#include <iostream>
+			
+			using namespace std;
+			
+			int main()
+			{
+				int n, ultCf;
+ 			 	cin>>n; //citesc n
+ 				while(n!=0) //cât timp numărul are cifre
+ 				{
+ 					uc=n%10; //calculez ultima cifră
+ 					//prelucrez cifra în funcție de cerință
+					n =n/10; //elimin ultima cifră din dreapta
+ 				}
+				 return 0;
+			}
+		</XMP>
+	</p>
+	<br> <br>
+	<p class="text" style="font-size:150%;"> 
+		Algoritmul de mai sus ia pe rând cifrele unui număr citit de la tastatură, o prelucrează în funcție de cerință, apoi o elmimină din structura numărului. 
+	</p>
+	<p class="text" style="font-size:150%; margin-left: 1.5cm; color: #ffccff;"> Exemple de exerciții rezolvate: <a href="PrelucNr.docx" target="_blank"> Exerciții</a> </p>
+	<br> <br> <br>
+
+<!-- Quiz-ul. Tot ce trebuie sa stii legat de cum sa-l modifici si ce fisiere ii corespund se afla foarte bine explicat si detalait aici: http://www.hungrypiranha.org/make-a-website/html-quiz -->
+
+	<p id="quiz"> Quiz </p>
+	<br> <br>
+	<p class="question" style="margin-left:20px; font-size:150%;"><span style="color:#ff9966;">1.</span> Extragerea și prelucrarea cifrelor unui număr se face atâta timp cât acesta:</p>        
+
+	<ul class="answers" style="margin-left:20px; font-size:120%;">            
+	<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Este negativ</label><br/>          
+	<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Este de acord cu asta</label><br/>            
+	<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Mai are cifre neprelucrate</label><br/>            
+	<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Întrebare capcană, algoritmul va intra într-o buclă infinită</label><br/>       
+	</ul>        
+
+
+	<p class="question" style="margin-left:20px; font-size:150%;"><span style="color:#ff9966;">2.</span> Pentru a calcula suma cifrelor unui număr, ne trebuie:</p>        
+
+	<ul class="answers" style="margin-left:20px; font-size:120%;">            
+	<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">O variabilă booleană</label><br/>           
+	<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">O variabilă inițializată cu 0 care va stoca suma</label><br/>            
+	<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">Un număr la întâmplare care sperăm să coincidă cu suma</label><br/>           
+	<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">Încredere</label><br/>       
+	</ul>        
+
+	<p class="question" style="margin-left:20px; font-size:150%;"><span style="color:#ff9966;">3.</span> Cifrele numărului se extrag:</p>        
+
+	<ul class="answers" style="margin-left:20px; font-size:120%;">            
+	<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">De la stânga la dreapta</label><br/>            
+	<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">La întâmplare</label><br/>            
+	<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">De la dreapta la stânga</label><br/>           
+	<input type="radio" name="q3" value="d" id="q3d"><label for="q3d">Ca la bingo</label><br/>       
+	</ul>        
+
+	<p class="question" style="margin-left:20px; font-size:150%;"><span style="color:#ff9966;">4.</span> Ce facem când avem de verificat îndepinirea unei condiții?</p>        
+
+	<ul class="answers" style="margin-left:20px; font-size:120%;">           
+	<input type="radio" name="q4" value="a" id="q4a"><label for="q4a">Modificăm numerele astfel încât toate să respecte condiția</label><br/>            
+	<input type="radio" name="q4" value="b" id="q4b"><label for="q4b">Ne bazăm că toate numerele o îndeplinesc</label><br/>            
+	<input type="radio" name="q4" value="c" id="q4c"><label for="q4c">Cu siguranță nu verificăm condiția...</label><br/>            
+	<input type="radio" name="q4" value="d" id="q4d"><label for="q4d">Considerăm că toate numerele îndeplinesc condiția și verificăm dacă unul din ele n-o respectă</label><br/>        
+	</ul>        
+
+	<p class="question" style="margin-left:20px; font-size:150%;"><span style="color:#ff9966;">5.</span> Ce facem cu o cifră după ce am prelucrat-o?</p>        
+
+	<ul class="answers" style="margin-left:20px; font-size:120%;">            
+	<input type="radio" name="q5" value="a" id="q5a"><label for="q5a">O scădem din numărul din care provine</label><br/>            
+	<input type="radio" name="q5" value="b" id="q5b"><label for="q5b">O eliminăm din structura numărului</label><br/>            
+	<input type="radio" name="q5" value="c" id="q5c"><label for="q5c">O scoatem în oraș ca să nu se simtă folosită</label><br/>           
+	<input type="radio" name="q5" value="d" id="q5d"><label for="q5d">Nu facem nimic cu ea</label><br/>        
+	</ul>        
+
+	<p class="question" style="margin-left:20px; font-size:150%;"><span style="color:#ff9966;">6.</span> Când avem de aflat o valoare maximă, cum inițializăm variabila care va stoca această valoare?</p>        
+
+	<ul class="answers" style="margin-left:20px; font-size:120%;">            
+	<input type="radio" name="q6" value="a" id="q6a"><label for="q6a">Cu cea mai mică valoare posibilă</label><br/>            
+	<input type="radio" name="q6" value="b" id="q6b"><label for="q6b">Cu cea mai mare valoare posibilă</label><br/>            
+	<input type="radio" name="q6" value="c" id="q6c"><label for="q6c">Cum un număr la întâmplare</label><br/>            
+	<input type="radio" name="q6" value="d" id="q6d"><label for="q6d">Nu o inițializăm deloc</label><br/>        
+	</ul>       
+
+	<p class="question" style="margin-left:20px; font-size:150%;"><span style="color:#ff9966;">7.</span> Pentru a vedea din câte cifre este format un număr, ne trebuie o variabilă cu rol de?</p>        
+
+	<ul class="answers" style="margin-left:20px; font-size:120%;">            
+	<input type="radio" name="q7" value="a" id="q7a"><label for="q7a">Contor</label><br/>            
+	<input type="radio" name="q7" value="b" id="q7b"><label for="q7b">Variabilă auxiliară</label><br/>            
+	<input type="radio" name="q7" value="c" id="q7c"><label for="q7c">Antagonist</label><br/>            
+	<input type="radio" name="q7" value="d" id="q7d"><label for="q7d">Variabilă booleană</label><br/>        
+	</ul>        
+
+	<p class="question" style="margin-left:20px; font-size:150%;"><span style="color:#ff9966;">8.</span> Cum formăm răsturnatul unui număr?</p>        
+
+	<ul class="answers" style="margin-left:20px; font-size:120%;">            
+	<input type="radio" name="q8" value="a" id="q8a"><label for="q8a">Îl înmulțim cu el însuși, apoi îl scădem din rezultatul nou obținut</label><br/>            
+	<input type="radio" name="q8" value="b" id="q8b"><label for="q8b">Spunem același număr și sperăm că era palindrom</label><br/>            
+	<input type="radio" name="q8" value="c" id="q8c"><label for="q8c">Luăm numărul și îl răsturnăm</label><br/>            
+	<input type="radio" name="q8" value="d" id="q8d"><label for="q8d">Inițializăm o variabilă cu 0 și o înmulțim cu 10 de fiecare dată când vrem să-i adăugăm o cifră (cifrele numărului se iau de la dreapta la stânga)</label><br/>       
+	</ul>        
+
+	<p class="question" style="margin-left:20px; font-size:150%;"><span style="color:#ff9966;">9.</span> Cum ți se pare acest site?</p>        
+
+	<ul class="answers" style="margin-left:20px; font-size:120%;">            
+	<input type="radio" name="q9" value="a" id="q9a"><label for="q9a">Ca fiind doar un sumă de coduri în HTML, CSS și Javascript</label><br/>            
+	<input type="radio" name="q9" value="b" id="q9b"><label for="q9b">Nu mi se pare</label><br/>            
+	<input type="radio" name="q9" value="c" id="q9c"><label for="q9c">Perfecțiunea întruchipată</label><br/>            
+	<input type="radio" name="q9" value="d" id="q9d"><label for="q9d">Nașpa, nu este îndeajuns de educativ</label><br/>        
+	</ul>        
+
+	<p class="question" style="margin-left:20px; font-size:150%;"><span style="color:#ff9966;">10.</span> Ai mai revizita acest site?</p>        
+ 
+	<ul class="answers" style="margin-left:20px; font-size:120%;">           
+	<input type="radio" name="q10" value="a" id="q10a"><label for="q10a">Presupun că da</label><br/>            
+	<input type="radio" name="q10" value="b" id="q10b"><label for="q10b">Dacă l-aș mai revizita?! De acum numai pe el o să stau! Cum prind Wi-fi pe el intru!</label><br/>            
+	<input type="radio" name="q10" value="c" id="q10c"><label for="q10c">Cu siguranță nu, este un gunoi</label><br/>            
+	<input type="radio" name="q10" value="d" id="q10d"><label for="q10d">Probabil că nu</label><br/>        
+	</ul>        
+
+	<br/>
+	<div id="results" style="margin-left:65px;">            
+		Arată-mi răspunsurile!       
+	</div>                
+
+	<div id="category1">            
+		<p>              
+		<strong>Întrebarea 1:</strong> Răspunsul corect este: <strong>Mai are cifre neprelucrate</strong>.</p>        
+	</div>        
+
+	<div id="category2">            
+		<p>              
+		<strong>Întrebarea 2:</strong> Răspunsul corect este: <strong>O variabilă inițializată cu 0 care va stoca suma</strong>.</p>        
+	</div>        
+
+	<div id="category3">            
+		<p>                
+		<strong>Întrebarea 3:</strong> Răspunsul corect este: <strong>De la dreapta la stânga</strong>.</p>        
+	</div>        
+
+	<div id="category4">            
+		<p>               
+		<strong>Întrebarea 4:</strong> Răspunsul corect este: <strong>Considerăm că toate numerele îndeplinesc condiția și verificăm dacă unul din ele n-o respectă</strong>.</p>        
+	</div>        
+
+	<div id="category5">            
+		<p>                
+		<strong>Întrebarea 5:</strong> Răspunsul corect este: <strong>O eliminăm din structura numărului</strong>.</p>        
+	</div>        
+
+	<div id="category6">            
+		<p>                
+		<strong>Întrebarea 6:</strong> Răspunsul corect este: <strong>Cu cea mai mică valoare posibilă</strong>.</p>        
+	</div>        
+
+	<div id="category7">            
+		<p>                
+		<strong>Întrebarea 7:</strong> Răspunsul corect este: <strong>Contor</strong>.</p>        
+	</div>        
+
+	<div id="category8">            
+		<p>               
+		<strong>Întrebarea 8:</strong> Răspunsul corect este: <strong>Inițializăm o variabilă cu 0 și o înmulțim cu 10 de fiecare dată când vrem să-i adăugăm o cifră (cifrele numărului se iau de la dreapta la stânga)</strong>.</p>        
+	</div>        
+
+	<div id="category9">           
+		<p>               
+		<strong>Întrebarea 9:</strong> Răspunsul corect este: <strong>Perfecțiunea întruchipată</strong>.</p>        
+	</div>        
+
+	<div id="category10">            
+		<p>                
+		<strong>Întrebarea 10:</strong> Răspunsul corect este: <strong>Dacă l-aș mai revizita?! De acum numai pe el o să stau! Cum prind Wi-fi pe el intru!</strong>.</p>        
+	</div>        
+
+	<div id="category11">            
+		<p>                
+		Ai răspuns la toate corect!</p>  
+	</div> 
+	<br> <br> <br> <br> <br>  
+
+<!-- Butoanele de Back si de Joc sunt doar imagini-link. Poti modifica link-ul butonului back.png ca sa te duca la site-ul principal --> 
+  
+	<div style="text-align:center;">
+  		<span class="imgContainer">
+			<a href="file:///C:/Users/Oana/Desktop/Aca/Programare/Programe/HTML/SiteuriTIC/PrelucrareCfNr/PrelucrareCfNr.html" target="_self">
+        			<img src="back.png" height="70" width="180"> 
+			</a>
+   		 </span>
+   		 <span class="imgContainer">
+			<a href="file:///C:/Users/Oana/Desktop/Aca/Programare/Programe/HTML/SiteuriTIC/Fibonacci/joc.html" target="_blank">
+        			<img  src="button1.png" height="70" width="180"> 
+			</a>
+   		 </span>
+	</div>		
+</body>
+</html>
