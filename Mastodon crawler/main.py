@@ -16,7 +16,7 @@ class DateTimeEncoder(json.JSONEncoder):
 
 
 # Create an app and obtain the client credentials.
-# Substitute the name of your app and name of the credentials file.
+# Substitute the name of your app and the name of the credentials file.
 Mastodon.create_app("WSE_Task1",
                     api_base_url="https://mastodon.social",
                     to_file="your_mastodon_file.secret" # Substitute with own secret file
@@ -26,10 +26,9 @@ mastodon = Mastodon(
     client_id="your_mastodon_file.secret" # Substitute with own secret file
 )
 # Log in with your account.
-# Substitute your e-mail and password
-# and the name of the credentials file.
+# Substitute your e-mail and password and the name of the credentials file.
 mastodon.log_in("your_email@gmail.com", "your_password", # Substitute with own login details
-                to_file="alexandra_mastodon.secret" # Substitute with own secret file
+                to_file="your_mastodon_file.secret" # Substitute with own secret file
                 )
 
 
