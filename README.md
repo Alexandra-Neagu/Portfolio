@@ -2,6 +2,10 @@
 
 A portfolio of the projects I have worked on. It includes both personal and academic projects.
 
+## Mobile Apps
+
+1. [DeNoize Smart Home App](https://drive.google.com/file/d/1SltZE5LtF8nObPDHWqcB0b3s8leLtNI8/view?usp=sharing)
+
 ## Blog posts
 
 1. [NeuRBF: Reproduction and Ablation Studies](https://alexandra-neagu.medium.com/neurbf-reproduction-and-ablation-studies-b35096897e23)
