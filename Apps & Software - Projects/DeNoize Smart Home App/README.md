@@ -4,11 +4,12 @@ A Flutter-based mobile application prototype developed for DeNoize, a smart-home
 
 ## Application Overview
 
-The application brings together smart-home device management and environmental monitoring in a single mobile interface, for Android and iOS. Users can navigate between rooms, inspect environmental measurements, explore historical data, and manage their connected devices.
+The application brings together smart-home device management and environmental monitoring in a single mobile interface for Android and iOS. Users can navigate between rooms, inspect environmental measurements, explore historical data, and manage their connected devices.
 
 ## Features
 
 - **Smart Home Dashboard:** Overview of connected devices and room-specific information.
+- **Device Connection:** Connect a DeNoize device via Bluetooth Low Energy (BLE) and provision its Wi-Fi.
 - **Room Management:** Create, navigate between, and manage different rooms.
 - **Environmental Monitoring:** Display CO₂, temperature, and humidity levels from the devices' sensors.
 - **Historical Data Visualisation:** Explore hourly, daily, and weekly environmental trends.
